@@ -19,31 +19,12 @@
     flex-flow: row wrap;
 }
 
-/*.logo{
-    display: flex;
-    justify-content: flex-start;
-}
 
-.TituloPrincipal{
-    display: flex;
-    justify-content: space-between;
-}*/
-
-/*@media(min-width:600px){
-    .MainContainer{
-    }
-}
-
-@media(min-width:900px){
-    .MainContainer{
-    }
-}*/
-
-.header{
-    width: 1000%;
+header{
+    width: 100%;
     padding: 20px;
     display: flex;
-    background-color: darkblue;
+    background-color: #297f87;
     justify-content: space-between;
     align-items: center;
     flex-flow:row wrap; /* esta y la siguiente por si alguna linea tiene que ir abajo*/
@@ -67,21 +48,132 @@ header .logoytitulo a{
 }
 
 header nav{
-    width: 30%;
-    background-color: cornflowerblue;
+    width: 40%;
+    /* background-color: cornflowerblue; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header nav a{
+    background: #df2e2e;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+header nav a:hover{
+    background: #e86a6a;
 }
 
 .main{
-    grid-area: main;
-    background-color: pink;
+    background-color: #fff7ae;
+    padding: 20px;
+    flex: 1 1 70%;
+    /* flex: 1; */
 }
 
-.sidebar{
-    grid-area: sidebar;
-    background-color:tomato;
+.main article{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
 }
 
-.footer{
-    grid-area: footer;
-    background-color:teal;
+.main article:nth-last-child(1){ /*solo afecta al último article*/
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom:none;
+}
+
+aside{
+    background-color: #F6D167;
+    padding: 20px;
+    display: flex;
+    flex: 1 1 30%;
+    /* flex: 0 0 300px; */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+aside .widget{
+    background-color: #fff;
+    height: 150px;
+    margin: 10px;
+}
+
+footer{
+    background-color:#297f87;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .links{
+    background: #df2e2e;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+footer .links a{
+    flex-grow:1;
+    color:#fff;
+    padding: 10px;
+    text-align: center;
+    text-decoration:none;
+}
+
+footer .links a:hover{
+    background: #e86a6a;
+}
+
+footer .social{
+    /* background: #df2e2e; */
+}
+
+footer .social a{
+    color: #fff;
+    text-decoration: none;
+    /* padding: 10px; */
+    display: inline-block;
+}
+
+@media screen and (max-width: 800px){
+    .MainContainer{
+        flex-direction: column;
+    }
+    header{
+        flex-direction: column;
+        padding: 0;
+    }
+    header .logoytitulo{
+        margin: 20px;
+    }
+    header nav{
+        width: 100%;
+    }
+    aside {
+        flex-direction: row;
+        flex: 0;
+    }
+    aside .widget{
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 600px){
+    aside{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .social{
+        margin: 10px;
+        }
 }

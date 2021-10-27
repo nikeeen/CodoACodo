@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aeroblogs</title>
     <link rel="stylesheet" href="Estilos/main.css">
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
 </head>
 <body class="MainContainer">
     <header class="header">
@@ -20,16 +21,7 @@
             <a href="#">Contacto</a>    
         </nav>
     </header>
-    
-    <aside class="sidebar">
-        <div class="widget1">
-            <div class="imagen1"></div>     
-        </div>
-        <div class="widget">
-            <div class="imagen1"></div>
-        </div>
-    </aside>
-    <section class="main">
+        <section class="main">
         <article>
             <h2>Primer Título</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, quos. Ducimus eveniet nisi, quae cum nobis explicabo recusandae quia aut quidem quas cumque libero dolorem temporibus ut laboriosam labore. Excepturi aliquid dolor voluptate laudantium itaque debitis dicta veritatis sapiente nemo voluptates molestias est vero eius earum, laborum rerum possimus ipsam dolores officia quisquam vitae sint error. Velit earum deserunt natus voluptate doloribus, at possimus similique eum! Vitae nostrum quibusdam, enim delectus autem nesciunt corporis fugit vero voluptatum similique in assumenda soluta accusamus iure inventore explicabo voluptatem facilis repellendus harum ab minima. Dolorum id illum, dolores deserunt neque tempore. Iusto, fuga?</p>
@@ -39,6 +31,14 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat nobis repudiandae, odio excepturi quo assumenda deleniti aut pariatur corporis rerum nam consequuntur illo nisi maiores culpa, dolores adipisci incidunt similique animi modi ipsam. Sequi nobis debitis illo atque perferendis! Laboriosam atque iusto consequatur voluptatem molestiae architecto neque reprehenderit ullam accusamus, ut laudantium quia numquam aperiam. Esse nihil unde ea quisquam perferendis hic illo reprehenderit eos corporis id quis ut qui doloribus deleniti vero, quos odit quas tenetur fuga laboriosam velit omnis voluptatibus natus! Officiis tempora unde magni aspernatur cum, illo id, voluptate, quisquam asperiores nobis nesciunt ab molestiae atque consequatur.</p>
         </article>
     </section>
+    <aside class="sidebar">
+        <div class="widget">
+            <div class="imagen"></div>
+        </div>
+        <div class="widget">
+            <div class="imagen"></div>
+        </div>
+    </aside>
     <footer class="footer">
         <div class="links">
             <a href="#">Inicio</a>
@@ -47,8 +47,21 @@
             <a href="#">Contacto</a>
         </div>
         <div class="social">
-            <a href="#">FB</a>
-            <a href="#">TW</a>
+            <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAs5JREFUWEetWItVHDEMHFcQUgF0AB1AB4QKSDqgA+4qSUogFZAOgA5IB3TgPH/W1s+29si+B8fzyfJIGo28BMyeACDmX0D9sM2nX9Ythg31v1ntO2fHwdRUbRv7Sd+06D3H9Qx5rLnNekdAWBuNa2pkfB9ew3XJkH6+Abgsy74o7apM6/YO4DeAD3o8AdQ2fwfw83TyDsKOpsc7AE8aEA/vAOBRGpVm+0yBOaDq6QiEA+3iwiEPoGngJwM9AkgJaNJgcegAhMeAaCakH70E8QbgFUDiyhmAq/rzhTBTACqMlY8oWUAGt6AGgZeAPAD4Y2xJa9ekUXrJWo6WgBSbTHZWQH9rFj5Yc3ZeVEDNhQCUgif1y+QqNWWkdndcwA9E/LLt86oBiHLIVTKzO/KiwaKvXFfCBRDvi4dsnSTlgnjUJTME7YB4YoZ0gEljbgkgWQ9dMiPK3mUGfWxFZufQzLESGXuPiMOSNXMnh0hb9BYMKUmkK+eAAC2M67YfUdScUxlQbY5M4gBc21Mj++06VLfpaR/g5BB3OJosfT3/lUTynDTEXBgryD0lO6IEMHgUa6JozZkONZ+Z1CTts8NUhFIkCJ+uAvBSsDegeb8svmzFSYbUGDEB0XnXZ2K4AeKziM47XPfr0MZJIZhSmXnwAaLt2eioidxHallOOayHgOrG2XClOlQ5RMIWtbcHR6kofeYZqm3/CQ4tpduZoRapVurR6OhdptI06vGNPvMMcXdzUncd4m1vgJ4JD52lDg7tuX64kTRD5yzjOiSJIKOdKvUCo82h8RVBCOPW9nzDenQYg0vpUFkoJRtH4brkixdFd90qqZn9ikN3QHiiY4qkuMV4hoibelmfdRT7jgxmui6vrPR2kia/uH8Lpe6edmXFDZrPVXtbyZCUyk1tDTKqF8gpdkPDDHut1P85IaP4PKl0/H/IcO8OgO9Vb8BGAv8BBI0rPgNGT5sAAAAASUVORK5CYII="/> -->
+            <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAypJREFUWEedmP9d20AMxb+aADZoN2iYIOkEZQOSCaATECagbJBO0DABjBAmgG6QTnD9yD4n90Oyz/gfEud8enrvSScjJJcAIX63P8e73Z90RbqL99lYX90S9NbpskP4gZshTSRw3keQ9MuZHyPLlJzpLHzKvH0GZZoBjaoyg0UDUEpgg2SGqT4JzjNH6ddJDwkhmt035jlLNeawfr62PUPN7mxauhC4DfAVZAXhgPBK4An4SCBe0q3hUMIuBdBFK2BnAZ0omDuQx44hO8lNBPUDWANXIB9pMWUeisjugEeBTVBQwzXN4jXwp6UjxTU/gV/lekuyV5BlRL0B2dntIEOo9L8jXJrU1MlooirfVWTqmOZdgtwDSulw6Xel+vRQ9kAfzGEnGtzW+V9vDTnUkuW9oZOsQKlg9P5vu25kC+G+XS55E8I6FIYe6qvcR1G/OF37KLAPwhMhqw71wq0LqGw0gQdga9nTa4yq8U39QEpl91lL9hibgVam3UNqD5mG9hhSP7wCe4Tl6fhv18OwWPXw9xijSKE47eNjnakFjgG0epKrYsjvlONtIgNURijhb0Hu7fYfl06c2Lbx88zKAzWdw0pA2qnf5yo03TdPOz6DXHujTmLqbEutgBll3AL/tL9t6IT1XIfz3muELYEvLeFSd46wpc1QFciarDt+FIG1jC9iv1g0gxoZHQQeQp+kUyh9jXgMKaCXsspGzW6gTrI32SnDW6d9uu0O5GZ01h4Hkf66Edi5Lyu1h1xRtEkuByXqU6BBTOE5HsCGGnlvm2JoiKby6Rmn5frNhWC7+Q1hRYhGnugPrYAUg7aCW4HLzJMVuiziW5w+h/POd2zCnc+5sCCgjCgYLddeubYuqKOKjiz2HFXXWbd7z9A5wCr2nguBxTgTbh5/4xSo3jPDlk9O9SFlQjPTIVz7UKtlVB4dW6o5ucH2mZT5iZ3LEc3cvYXotYw/a3CVQufiA8geQvqK094MipWZqVusMbrmUz2hFtZ3fgvCOXo0rJ3934+iCMwBrTmPamE2MXrv5IbFmiO2VVma5Njhako51yY2dj+j9k79KVYMRSf2+Q/58xY6FE7ZcgAAAABJRU5ErkJggg=="/> -->
+            <a href="http://www.facebook.com" title='Facebook'>
+                <box-icon type='logo' name='facebook-square' size='md'></box-icon>
+            </a>
+            <a href="http://www.instagram.com" title='Instagram'>
+                <box-icon type='logo' name='instagram' size='md'></box-icon>
+            </a>
+            <a href="http://www.twitter.com" title='Twitter'>
+                <box-icon name='twitter' type='logo' size='md'></box-icon>
+            </a>
+            <a href="http://www.linkedin.com" title='LinkedIn'>
+                <box-icon name='linkedin-square' type='logo' size='md'></box-icon>
+            </a>
+            
         </div>
     </footer>
 </body>
