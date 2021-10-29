@@ -66,6 +66,7 @@ header nav a{
 
 header nav a:hover{
     background: #e86a6a;
+    transition: background-color 1s;
 }
 
 .main{
@@ -154,6 +155,7 @@ footer .links a{
 
 footer .links a:hover{
     background: #e86a6a;
+    transition: background-color 1s;
 }
 
 footer .social{
