@@ -139,7 +139,7 @@ footer .social a{
     color: #fff;
     text-decoration: none;
     /* padding: 10px; */
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 @media screen and (max-width: 800px){
@@ -176,4 +176,13 @@ footer .social a{
     footer .social{
         margin: 10px;
         }
+}
+
+
+
+/* estilos del form.html*/
+
+.bloque{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

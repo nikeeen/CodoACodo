@@ -1,12 +1,366 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inscribite</title>
+    <link rel="stylesheet" href="Estilos/main.css">
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
-<body>
-    
+<body class="MainContainer">
+    <header class="header">
+        <div class="logoytitulo">
+            <img src="imágenes/Logo.png" alt="wraps" width="80" height="80">
+            <a href="index.html">Aeroblogs</a>
+        </div>          
+        <nav class="navbar">
+            <a href="#">Inicio</a>    
+            <a href="form.html">Inscribite!</a>
+            <a href="contacto.html">Contacto</a>    
+        </nav>
+    </header>
+    <section class="main">
+        <div class="encabezado">
+            <h1>Solicitud de datos personales</h1>
+            <p>Para poder inscribirse es necesario que ingrese los siguientes datos<br>Todos estos datos son guardados de manera confidencial por el sitio y al resguardo de terceros</p>
+        </div>
+        
+        <form name="formulario" method="post" target="_blank" autocomplete="off">  
+            <div class="bloque">
+                <div class="row">
+                    <div class="col">
+                        <label for="Nombre" class="form-label">Nombres</label>
+                        <input type="text" class="form-control" placeholder="Ej: Nicolás Alejandro">
+                    </div>
+                    <div class="col">
+                        <label for="Apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" placeholder="Ej: Magariño">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bloque">
+                <div class="row">
+                    <div class="col">
+                        <label for="Direccion" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" placeholder="Ej: Alsina">
+                    </div>
+                    <div class="col">
+                        <label for="Altura" class="form-label">Altura</label>
+                        <input type="number" class="form-control" placeholder="Ej: 1234">
+                    </div>
+                    <div class="col">
+                        <label for="Piso" class="form-label">Piso</label>
+                        <input type="text" class="form-control" placeholder="Ej: 7C">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bloque">
+                <div class="row">
+                    <div class="col">
+                        <label for="NúmerodeDNI" class="form-label">Número de DNI</label>
+                        <input type="number" class="form-control" placeholder="Ej: 12345678">
+                    </div>
+                    <div class="col">
+                        <label for="Sexo" class="form-label">Sexo</label>
+                        <select class="form-select">
+                            <option selected>Seleccionar</option>
+                            <option value="1">Femenino</option>
+                            <option value="2">Masculino</option>
+                            <option value="3">Prefiero no indicarlo</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bloque">
+                <div class="col">
+                    <div>
+                        <label for="FechaNac" class="form-label">Fecha de nacimiento</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="Dia" class="form-label">Día</label>
+                        <select class="form-select">
+                            <option selected>--</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="Mes" class="form-label">Mes</label>
+                        <select class="form-select">
+                            <option selected>--</option>
+                            <option value="1">Enero</option>
+                            <option value="2">Febrero</option>
+                            <option value="3">Marzo</option>
+                            <option value="4">Abril</option>
+                            <option value="5">Mayo</option>
+                            <option value="6">Junio</option>
+                            <option value="7">Julio</option>
+                            <option value="8">Agosto</option>
+                            <option value="9">Septiembre</option>
+                            <option value="10">Octubre</option>
+                            <option value="11">Noviembre</option>
+                            <option value="12">Diciembre</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="Año" class="form-label">Año</label>
+                        <select class="form-select">
+                            <option selected>--</option>
+                            <option value="1">2021</option>
+                            <option value="2">2020</option>
+                            <option value="3">2019</option>
+                            <option value="4">2018</option>
+                            <option value="5">2017</option>
+                            <option value="6">2016</option>
+                            <option value="7">2015</option>
+                            <option value="8">2014</option>
+                            <option value="9">2013</option>
+                            <option value="10">2012</option>
+                            <option value="11">2011</option>
+                            <option value="12">2010</option>
+                            <option value="13">2009</option>
+                            <option value="14">2008</option>
+                            <option value="15">2007</option>
+                            <option value="16">2006</option>
+                            <option value="17">2005</option>
+                            <option value="18">2004</option>
+                            <option value="19">2003</option>
+                            <option value="20">2002</option>
+                            <option value="21">2001</option>
+                            <option value="22">2000</option>
+                            <option value="23">1999</option>
+                            <option value="24">1998</option>
+                            <option value="25">1997</option>
+                            <option value="26">1996</option>
+                            <option value="27">1995</option>
+                            <option value="28">1994</option>
+                            <option value="29">1993</option>
+                            <option value="30">1992</option>
+                            <option value="31">1991</option>
+                            <option value="32">1990</option>
+                            <option value="33">1989</option>
+                            <option value="34">1988</option>
+                            <option value="35">1987</option>
+                            <option value="36">1986</option>
+                            <option value="37">1985</option>
+                            <option value="38">1984</option>
+                            <option value="39">1983</option>
+                            <option value="40">1982</option>
+                            <option value="41">1981</option>
+                            <option value="42">1980</option>
+                            <option value="43">1979</option>
+                            <option value="44">1978</option>
+                            <option value="45">1977</option>
+                            <option value="46">1976</option>
+                            <option value="47">1975</option>
+                            <option value="48">1974</option>
+                            <option value="49">1973</option>
+                            <option value="50">1972</option>
+                            <option value="51">1971</option>
+                            <option value="52">1970</option>
+                            <option value="53">1969</option>
+                            <option value="54">1968</option>
+                            <option value="55">1967</option>
+                            <option value="56">1966</option>
+                            <option value="57">1965</option>
+                            <option value="58">1964</option>
+                            <option value="59">1963</option>
+                            <option value="60">1962</option>
+                            <option value="61">1961</option>
+                            <option value="62">1960</option>
+                            <option value="63">1959</option>
+                            <option value="64">1958</option>
+                            <option value="65">1957</option>
+                            <option value="66">1956</option>
+                            <option value="67">1955</option>
+                            <option value="68">1954</option>
+                            <option value="69">1953</option>
+                            <option value="70">1952</option>
+                            <option value="71">1951</option>
+                            <option value="72">1950</option>
+                            <option value="73">1949</option>
+                            <option value="74">1948</option>
+                            <option value="75">1947</option>
+                            <option value="76">1946</option>
+                            <option value="77">1945</option>
+                            <option value="78">1944</option>
+                            <option value="79">1943</option>
+                            <option value="80">1942</option>
+                            <option value="81">1941</option>
+                            <option value="82">1940</option>
+                            <option value="83">1939</option>
+                            <option value="84">1938</option>
+                            <option value="85">1937</option>
+                            <option value="86">1936</option>
+                            <option value="87">1935</option>
+                            <option value="88">1934</option>
+                            <option value="89">1933</option>
+                            <option value="90">1932</option>
+                            <option value="91">1931</option>
+                            <option value="92">1930</option>
+                            <option value="93">1929</option>
+                            <option value="94">1928</option>
+                            <option value="95">1927</option>
+                            <option value="96">1926</option>
+                            <option value="97">1925</option>
+                            <option value="98">1924</option>
+                            <option value="99">1923</option>
+                            <option value="100">1922</option>
+                            <option value="101">1921</option>
+                            <option value="102">1920</option>
+                            <option value="103">1919</option>
+                            <option value="104">1918</option>
+                            <option value="105">1917</option>
+                            <option value="106">1916</option>
+                            <option value="107">1915</option>
+                            <option value="108">1914</option>
+                            <option value="109">1913</option>
+                            <option value="110">1912</option>
+                            <option value="111">1911</option>
+                            <option value="112">1910</option>
+                            <option value="113">1909</option>
+                            <option value="114">1908</option>
+                            <option value="115">1907</option>
+                            <option value="116">1906</option>
+                            <option value="117">1905</option>
+                            <option value="118">1904</option>
+                            <option value="119">1903</option>
+                            <option value="120">1902</option>
+                            <option value="121">1901</option>
+                            <option value="122">1900</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bloque">
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Adjuntar imagen del DNI frente</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Adjuntar imagen de DNI reverso</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="bloque">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                    Acepto términos y condiciones
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck2">
+                    Acepto recibir noticias del sitio a mi correo electrónico
+                    </label>
+                </div>
+            </div>
+            <div class="bloque">
+                <button type="button" class="btn btn-secondary">Enviar</button>
+            </div>
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+    <aside class="sidebar">
+        <div class="widget">
+            <div class="imagen"></div>
+        </div>
+        <div class="widget">
+            <div class="imagen"></div>
+        </div>
+    </aside>
+    <footer class="footer">
+        <div class="links">
+            <a href="#">Inicio</a>
+            <a href="form.html">Inscribite!</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="social">
+            <a href="http://www.facebook.com" title='Facebook'>
+                <box-icon type='logo' name='facebook-square' size='md'></box-icon>
+            </a>
+            <a href="http://www.instagram.com" title='Instagram'>
+                <box-icon type='logo' name='instagram' size='md'></box-icon>
+            </a>
+            <a href="http://www.twitter.com" title='Twitter'>
+                <box-icon name='twitter' type='logo' size='md'></box-icon>
+            </a>
+            <a href="http://www.linkedin.com" title='LinkedIn'>
+                <box-icon name='linkedin-square' type='logo' size='md'></box-icon>
+            </a> 
+        </div>
+    </footer>
 </body>
 </html>
