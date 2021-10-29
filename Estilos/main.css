@@ -75,6 +75,15 @@ header nav a:hover{
     /* flex: 1; */
 }
 
+h2{
+    margin-bottom: 15px;
+}
+
+p{
+    padding: 4px;
+    text-align: justify;
+}
+
 .main article{
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -86,6 +95,22 @@ header nav a:hover{
     padding-bottom: 0;
     border-bottom:none;
 }
+
+/*.video{
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+}
+
+.video iframe, .video object, .video embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}*/
 
 aside{
     background-color: #F6D167;
@@ -99,8 +124,8 @@ aside{
 }
 
 aside .widget{
-    background-color: #fff;
-    height: 150px;
+    /* background-color: #fff; */
+    /* height: 304px; */
     margin: 10px;
 }
 
@@ -142,7 +167,7 @@ footer .social a{
     /* display: inline-block; */
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
     .MainContainer{
         flex-direction: column;
     }
@@ -163,6 +188,7 @@ footer .social a{
     aside .widget{
         flex-grow: 1;
     }
+    
 }
 
 @media screen and (max-width: 600px){
@@ -186,3 +212,21 @@ footer .social a{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+/* estilos del contacto */
+
+.lateral .mapa{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    padding-top: 30px;
+}
+
+.lateral .mapa iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
