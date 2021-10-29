@@ -206,6 +206,13 @@ footer .social a{
         }
 }
 
+.alertas{
+    width: 200px;
+    text-align: left;
+    margin: auto;
+    color: red;
+    padding-top: 20px;
+}
 
 
 /* estilos del form.html*/
