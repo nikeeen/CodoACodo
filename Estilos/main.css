@@ -158,10 +158,6 @@ footer .links a:hover{
     transition: background-color 1s;
 }
 
-footer .social{
-    /* background: #df2e2e; */
-}
-
 footer .social a{
     color: #fff;
     text-decoration: none;
@@ -207,8 +203,6 @@ footer .social a{
 }
 
 .alertas{
-    width: 200px;
-    text-align: left;
     margin: auto;
     color: red;
     padding-top: 20px;

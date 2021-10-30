@@ -26,37 +26,37 @@
             <h1>Solicitud de datos personales</h1>
             <p>Para poder inscribirse es necesario que ingrese los siguientes datos<br>Todos estos datos son guardados de manera confidencial por el sitio y al resguardo de terceros</p>
         </div>
-        <form name="formulario" method="post" target="_blank" autocomplete="off" action="index.html" id="form">  
+        <form name="formulario" method="post" target="_blank" autocomplete="off" action="" id="form">  
             <div class="bloque">
                 <div class="row">
                     <div class="col">
-                        <label for="Nombre" class="form-label">Nombres *</label>
+                        <label for="nombre" class="form-label">Nombres *</label>
                         <input type="text" class="form-control" placeholder="Ej: Nicolás Alejandro" id="nombre">
                     </div>
                     <div class="col">
-                        <label for="Apellido" class="form-label">Apellido *</label>
+                        <label for="apellido" class="form-label">Apellido *</label>
                         <input type="text" class="form-control" placeholder="Ej: Magariño" id="apellido" >
                     </div>
                 </div>
             </div>
             <div class="correo">
                 <div class="col">
-                    <label for="email" class="form-label">e-mail *</label>
+                    <label for="mail" class="form-label">e-mail *</label>
                     <input type="email" class="form-control" placeholder="maganicolas@gmail.com" id="mail" >
                 </div>
             </div>
             <div class="bloque">
                 <div class="row">
                     <div class="col">
-                        <label for="Direccion" class="form-label">Dirección *</label>
+                        <label for="direccion" class="form-label">Dirección *</label>
                         <input type="text" class="form-control" placeholder="Ej: Alsina" id="direccion" >
                     </div>
                     <div class="col">
-                        <label for="Altura" class="form-label">Altura *</label>
+                        <label for="numeropuerta" class="form-label">Altura *</label>
                         <input type="number" class="form-control" placeholder="Ej: 1234" id="numeropuerta" >
                     </div>
                     <div class="col">
-                        <label for="Piso" class="form-label">Piso</label>
+                        <label for="piso" class="form-label">Piso</label>
                         <input type="text" class="form-control" placeholder="Ej: 7C" id="piso">
                     </div>
                 </div>
@@ -64,12 +64,12 @@
             <div class="bloque">
                 <div class="row">
                     <div class="col">
-                        <label for="NúmerodeDNI" class="form-label">Número de DNI *</label>
+                        <label for="dni" class="form-label">Número de DNI *</label>
                         <input type="number" class="form-control" placeholder="Ej: 12345678" id="dni" >
                     </div>
                     <div class="col">
-                        <label for="Sexo" class="form-label">Sexo</label>
-                        <select class="form-select">
+                        <label for="sexo" class="form-label">Sexo</label>
+                        <select class="form-select" id="sexo">
                             <option selected>Seleccionar</option>
                             <option value="1">Femenino</option>
                             <option value="2">Masculino</option>
@@ -274,14 +274,14 @@
                 <div class="row">
                     <div class="col">
                         <div class="mb-3">
-                            <label for="formFile" class="form-label">Adjuntar imagen del DNI frente</label>
-                            <input class="form-control" type="file" id="formFile">
+                            <label for="formFile1" class="form-label">Adjuntar imagen del DNI frente</label>
+                            <input class="form-control" type="file" id="formFile1">
                         </div>
                     </div>
                     <div class="col">
                         <div class="mb-3">
-                            <label for="formFile" class="form-label">Adjuntar imagen de DNI reverso</label>
-                            <input class="form-control" type="file" id="formFile">
+                            <label for="formFile2" class="form-label">Adjuntar imagen de DNI reverso</label>
+                            <input class="form-control" type="file" id="formFile2">
                         </div>
                     </div>    
                 </div>
@@ -289,7 +289,7 @@
             <p>Los campos indicados con * son de llenado obligatorio</p>
             <div class="bloque">
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="defaultCheck1" >
+                    <input class="form-check-input" type="checkbox" id="defaultCheck1" required >
                     <label class="form-check-label" for="defaultCheck1">
                     Acepto términos y condiciones *
                     </label>
